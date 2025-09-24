@@ -24,6 +24,7 @@ def plot_weekday_means(day_of_week, mean, image_path):
     sns.barplot(x=day_of_week, hue=day_of_week, y=mean, palette='viridis', legend=False)
     plot_bar_template('Mean Values by Day of the Week', 'Day of the Week', 'Mean Value', 45)
     # Salvar a imagem do gráfico
+    plt.show()
     plt.savefig(image_path)
     plt.close()  # Fechar o gráfico após salvar
 
